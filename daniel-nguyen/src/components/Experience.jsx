@@ -58,7 +58,22 @@ export default function Experience() {
                     {job.bullets.map((b) => (
                       <li key={b} className="flex gap-2.5 text-sm leading-relaxed text-ink-500">
                         <span className="mt-1.5 text-amber">›</span>
-                        {b}
+                        {b.includes('Pikkit') ? (
+                          <span>
+                            {b.split('Pikkit')[0]}
+                            <a
+                              href="https://links.pikkit.com/user/dwinning"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-amber underline-offset-2 hover:underline"
+                            >
+                              Pikkit
+                            </a>
+                            {b.split('Pikkit')[1]}
+                          </span>
+                        ) : (
+                          b
+                        )}
                       </li>
                     ))}
                   </ul>
