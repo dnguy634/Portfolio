@@ -19,7 +19,7 @@ export default function Experience() {
       fileLabel="experience.log"
       lineNo="03"
       title="Where I've built and coordinated"
-      description="From aerospace program teams to early-stage startups, the work changes, the role doesn't: get a clear picture of the problem, then move it from ambiguous to shipped."
+      description="From aerospace project proposals  to product testing to early-stage startups, the work changes — the role doesn't: understand the problem, then ship something worth building."
     >
       <div ref={ref} className="relative">
         <div className="absolute left-[5px] top-2 h-full w-px bg-white/10" />

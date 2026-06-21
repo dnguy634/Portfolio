@@ -9,7 +9,7 @@ export default function About() {
       fileLabel="about.jsx"
       lineNo="02"
       title="Two ways of thinking, one way of building"
-      description="I'm a Computer Science + Business student at UC Riverside who builds where engineering and execution meet. I write the code, but I also scope the requirements, manage the timeline, and talk to the stakeholders who depend on the outcome."
+      description="I'm a Computer Science + Business student at UC Riverside who builds where engineering and execution meet. My background spans consumer apps, NASA mission proposals, and data-driven ventures, with a focus on cross-functional delivery, execution, and product thinking"
     >
       <div className="grid grid-cols-1 gap-px border border-white/8 bg-white/8 sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat, i) => (
