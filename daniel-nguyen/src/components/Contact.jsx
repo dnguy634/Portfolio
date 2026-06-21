@@ -17,8 +17,12 @@ export default function Contact() {
       id="contact"
       fileLabel="contact.sh"
       lineNo="06"
-      title="Let's build something"
-      description="Open to Program Management, Product Management, and software internships — and always happy to talk shop about products, systems, or aerospace projects."
+      title={
+        <>
+          Let's build something worth <span className="text-amber">shipping</span>.
+        </>
+      }
+      description="I'm looking for program management, product, and software internships — and I'm always up to talk products, ideas, or pickup basketball."
     >
       <Reveal>
         <GlassCard className="overflow-hidden" hoverLift={false}>

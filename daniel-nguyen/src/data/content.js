@@ -8,80 +8,93 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/daniel-nguyen-a495b720b/',
   github: 'https://github.com/dnguy634',
   resume: '#',
-  location: 'Riverside, CA',
+  location: 'Anaheim, CA',
 }
 
 export const stats = [
   { label: 'CS + Business', value: 'Dual Focus', hint: 'UCR, Class of 2026' },
-  { label: 'Program Management', value: 'Intern', hint: 'Safran Cabin' },
-  { label: 'Shipped Projects', value: '6+', hint: 'Product & software' },
-  { label: 'GPA', value: '3.6', hint: 'UC Riverside' },
+  { label: 'Project Coordinator', value: "NASA L'Space", hint: 'Jan — April 2026' },
+  { label: 'Selected Projects', value: '3', hint: 'Product & software' },
+  { label: 'GPA', value: '3.5', hint: 'UC Riverside' },
 ]
 
 export const experience = [
   {
-    company: 'Safran Cabin',
-    role: 'Program Management Intern',
-    period: '2025 — Present',
-    location: 'Anaheim, CA',
-    summary:
-      'Support program leads on commercial aircraft interior programs — tracking schedule risk, coordinating cross-functional deliverables, and translating engineering status into program-level reporting.',
-    bullets: [
-      'Built and maintained schedule trackers across engineering, supply chain, and quality workstreams for active aircraft cabin programs',
-      'Ran weekly cross-functional syncs, surfacing schedule risks and owning action items to closure',
-      'Created executive-ready status reporting that reduced ambiguity in program reviews',
-    ],
-    tags: ['Program Management', 'Stakeholder Comms', 'Risk Tracking'],
-  },
-  {
-    company: 'Treevah',
-    role: 'Product & Software Intern',
-    period: '2024 — 2025',
-    location: 'Remote',
-    summary:
-      'Worked across product and engineering on an early-stage startup — scoping features, writing requirements, and shipping front-end functionality used by real customers.',
-    bullets: [
-      'Defined feature requirements and acceptance criteria alongside founders, translating vague asks into shippable scope',
-      'Built and shipped front-end features end-to-end, working directly with engineers on implementation',
-      'Ran lightweight user feedback loops to prioritize the roadmap with limited resources',
-    ],
-    tags: ['Product Management', 'Roadmapping', 'Front-End'],
-  },
-  {
-    company: "NASA L'SPACE",
+    company: "NASA L'Space Program",
     role: 'Project Coordinator',
-    period: '2024',
+    period: 'Jan 2026 — April 2026',
     location: 'Remote · NASA-Sponsored',
     summary:
-      "Coordinated a simulated aerospace concept-development project for NASA's L'Space Program, managing scope, timeline, and team deliverables under a mission-style review process.",
+      "Coordinated a cross-functional team of engineers through the full proposal lifecycle for a simulated NASA mission concept, keeping deliverables on track and aligned with NASA engineering standards.",
     bullets: [
-      'Coordinated a distributed team through a full proposal lifecycle, from concept to formal NASA-style review',
-      'Owned the project timeline and deliverable tracking across systems, science, and business workstreams',
-      'Presented program status and technical tradeoffs to a panel of NASA-affiliated reviewers',
+      'Led a cross-functional team of engineers through the full proposal lifecycle, tracking deliverables, resolving blockers, and maintaining alignment with NASA engineering standards',
+      'Improved team efficiency by ~20% by applying the three pillars of project management — scope, schedule, and resource allocation — through agile sprint cycles and strength-based task delegation',
+      'Contributed to research, data analysis, and technical documentation across proposal phases, ensuring traceability and compliance with program requirements',
     ],
-    tags: ['Systems Engineering', 'Project Coordination', 'Aerospace'],
+    tags: ['Project Coordination', 'Agile', 'Aerospace'],
+  },
+  {
+    company: 'BeReal',
+    role: 'Product Management — PM Externship',
+    period: 'Oct 2025 — Dec 2025',
+    location: 'Remote',
+    summary:
+      'Worked on product strategy for a consumer social app, mapping user journeys and benchmarking against competitors to surface opportunities for the product team.',
+    bullets: [
+      'Mapped end-to-end user journeys across 6+ onboarding and engagement touchpoints, identifying friction points and flagging them for the product team to prioritize',
+      'Conducted competitive analysis across 3 leading social platforms to identify feature gaps and engagement strategies BeReal could leverage',
+      'Coordinated delivery of a feature concept through requirements documentation and user flow diagrams, managing timelines across all phases',
+    ],
+    tags: ['Product Management', 'User Research', 'Competitive Analysis'],
+  },
+  {
+    company: 'RobbinBooks',
+    role: 'Co-Founder / Data Analyst',
+    period: 'Jun 2025 — Jun 2026',
+    location: 'Remote',
+    summary:
+      'Co-founded a subscription analytics service applying data-driven, +EV methodology to sports betting markets for paying community members.',
+    bullets: [
+      'Co-founded and scaled a subscription analytics service delivering data-driven analytics to paying community members',
+      'Analyzed implied odds across sportsbooks and DFS platforms, systematically identifying positive expected value (+EV) opportunities with a measurable edge',
+      'Generated six figures in net profit through +EV strategies, with all performance tracked and verified via Pikkit',
+    ],
+    tags: ['Data Analysis', '+EV Methodology', 'Co-Founder'],
+  },
+  {
+    company: 'Artificial Intelligence Student Collective @ UCR',
+    role: 'Organizational Member',
+    period: 'Sep 2024 — May 2025',
+    location: 'UC Riverside',
+    summary:
+      'Applied machine learning methods to real-world datasets and built data pipelines to support research projects within the collective.',
+    bullets: [
+      'Applied KNN and other ML methods to real-world datasets, translating model outputs into actionable insights presented to a broader team',
+      'Built data pipelines and visualizations in Python (Pandas, Matplotlib) to surface patterns and support data-driven decision-making across research projects',
+    ],
+    tags: ['Machine Learning', 'Python', 'Data Visualization'],
   },
 ]
 
 export const projects = [
   {
-    name: 'HoopFinder',
-    tagline: 'Find open courts and players nearby, in real time.',
+    name: 'Healthy Habits',
+    tagline: 'AI-powered fitness coaching, built from scratch.',
     description:
-      'A location-based web app that helps players discover nearby basketball courts and see who else is looking to run games — built to solve the everyday "is anyone playing right now" problem.',
-    tags: ['React', 'Flask', 'Supabase', 'Geolocation'],
-    metrics: ['Real-time presence', 'Map-based discovery'],
-    links: { live: '#', code: '#' },
+      'A fitness coaching web app that generates personalized weekly meal plans and workout routines based on user goals (bulk, cut, or maintain), powered by a context-aware live chat feature using the Anthropic Claude API.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Claude API'],
+    metrics: ['Personalized meal & workout plans', 'No frameworks — built end-to-end in vanilla JS'],
+    links: { live: 'https://dnguy634.github.io/Healthy-Habits/', code: 'https://github.com/dnguy634' },
     accent: 'indigo',
   },
   {
-    name: 'Trinket',
-    tagline: 'A marketplace web app for buying, selling, and trading.',
+    name: 'Todo List',
+    tagline: 'A clean, responsive task manager.',
     description:
-      'Full-stack marketplace platform with listings, search/filtering, and user accounts — designed with a product mindset around trust, discovery, and transaction flow.',
-    tags: ['React', 'Supabase', 'Tailwind', 'Auth'],
-    metrics: ['End-to-end listing flow', 'Search & filtering'],
-    links: { live: '#', code: '#' },
+      'A simple, fast todo list app for organizing and tracking daily tasks — focused on a clean interface and responsive behavior across devices.',
+    tags: ['JavaScript', 'Responsive Design'],
+    metrics: ['Deployed on Netlify', 'Cross-device responsive'],
+    links: { live: 'https://todo-list-dnguy634.netlify.app/', code: 'https://github.com/dnguy634' },
     accent: 'cyan',
   },
   {
@@ -91,36 +104,22 @@ export const projects = [
       'A C++ system that models degree requirements and course sequencing to help students plan a path to graduation — focused on clean data structures over prerequisite/requirement graphs.',
     tags: ['C++', 'Data Structures', 'Graph Algorithms'],
     metrics: ['Graph-based requirement modeling', 'Custom planning logic'],
-    links: { live: '#', code: '#' },
+    links: { live: 'https://github.com/dnguy634', code: 'https://github.com/dnguy634' },
     accent: 'violet',
-  },
-  {
-    name: 'OS & Systems Labs',
-    tagline: 'Threading, shortest paths, and file systems from scratch.',
-    description:
-      'A collection of systems-level projects: a multithreaded scheduler, a single-source shortest path (SSSP) implementation, and a simplified file system — built across low-level Linux lab coursework.',
-    tags: ['C', 'Linux', 'Concurrency', 'Algorithms'],
-    metrics: ['Multithreaded scheduler', 'Custom file system'],
-    links: { live: '#', code: '#' },
-    accent: 'amber',
   },
 ]
 
 export const skillGroups = [
   {
     title: 'Programming',
-    items: ['Python', 'C++', 'JavaScript', 'SQL'],
+    items: ['Python', 'JavaScript', 'C++', 'SQL', 'HTML/CSS'],
   },
   {
-    title: 'Web',
-    items: ['React', 'Flask', 'Supabase', 'Tailwind CSS'],
+    title: 'Tools/Frameworks',
+    items: ['Git','Github','Jira', 'Linear'],
   },
   {
-    title: 'Tools',
-    items: ['Git', 'GitHub', 'Jira', 'Power BI', 'Tableau'],
-  },
-  {
-    title: 'PM / Product',
-    items: ['Agile', 'Roadmapping', 'Requirements', 'Stakeholder Comms'],
+    title: 'PM Skills',
+    items: ['Agile', 'Roadmap Planning', 'Competative Analysis', 'Technical Documentation'],
   },
 ]
