@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion'
-import { Mail, Linkedin, Github, ArrowUpRight, Phone } from 'lucide-react'
+import { Mail, Linkedin, Github, ArrowUpRight } from 'lucide-react'
 import Section, { Reveal } from './ui/Section'
 import GlassCard from './ui/GlassCard'
 import { profile } from '../data/content'
 
 const channels = [
   { label: 'email', value: profile.email, href: `mailto:${profile.email}`, icon: Mail },
-  { label: 'phone', value: profile.phone, href: `tel:+1${profile.phone.replace(/\D/g, '')}`, icon: Phone },
   { label: 'linkedin', value: '/in/daniel-nguyen-a495b720b', href: profile.linkedin, icon: Linkedin },
   { label: 'github', value: '/dnguy634', href: profile.github, icon: Github },
 ]
@@ -40,8 +39,7 @@ export default function Contact() {
                   <span className="text-amber">$</span> echo "Have a role in mind?"
                 </p>
                 <p className="mt-2 max-w-md text-sm leading-relaxed text-ink-500">
-                  I'm quick to respond and always up for a conversation about
-                  program management, product, or software opportunities.
+                  Usually reply within a day.
                 </p>
               </div>
               <motion.a
@@ -54,12 +52,12 @@ export default function Contact() {
               </motion.a>
             </div>
 
-            <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3">
               {channels.map((channel) => (
                 <a
                   key={channel.label}
                   href={channel.href}
-                  target={channel.label === 'email' || channel.label === 'phone' ? undefined : '_blank'}
+                  target={channel.label === 'email' ? undefined : '_blank'}
                   rel="noreferrer"
                   className="group flex items-center justify-between border border-white/8 px-3.5 py-3 transition-colors hover:border-amber/35"
                 >
